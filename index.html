@@ -1,12 +1,83 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Terrarium</title>
+    <meta name="theme-color" content="#6f8462">
+
+    <meta
+        name="description"
+        content="A small digital garden in a glass terrarium, created with HTML and CSS."
+    >
+
+    <title>My Terrarium | A Little Digital Garden</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <header class="page-header">
+        <p class="eyebrow">A LITTLE PIECE OF NATURE</p>
+        <h1>My Terrarium</h1>
+        <p class="subtitle">
+            A tiny garden, growing one leaf at a time.
+        </p>
+    </header>
 
+    <main>
+        <section
+            class="terrarium"
+            aria-label="A glass terrarium containing five plants"
+        >
+            <div class="glass-shine" aria-hidden="true"></div>
+
+            <div class="plants">
+                <span class="plant plant-small"
+                      role="img"
+                      aria-label="Small seedling">🌱</span>
+
+                <span class="plant plant-large"
+                      role="img"
+                      aria-label="Potted green plant">🪴</span>
+
+                <span class="plant plant-large"
+                      role="img"
+                      aria-label="Leafy green plant">🌿</span>
+
+                <span class="plant plant-small"
+                      role="img"
+                      aria-label="Young cactus">🌵</span>
+
+                <span class="plant plant-small"
+                      role="img"
+                      aria-label="Fresh green leaves">🍃</span>
+            </div>
+
+            <div class="soil" aria-hidden="true">
+                <span class="soil-pebble pebble-one"></span>
+                <span class="soil-pebble pebble-two"></span>
+                <span class="soil-pebble pebble-three"></span>
+                <span class="soil-pebble pebble-four"></span>
+                <span class="soil-pebble pebble-five"></span>
+            </div>
+        </section>
+
+        <section class="garden-note" aria-labelledby="note-title">
+            <span class="note-icon" aria-hidden="true">✳</span>
+
+            <div>
+                <h2 id="note-title">Small things grow</h2>
+                <p>
+                    A little sunlight, a little patience, and room to grow.
+                    This is my tiny corner of green.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <p>Made with care, curiosity, and a little CSS.</p>
+    </footer>
 </body>
 </html>
